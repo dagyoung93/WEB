@@ -1,0 +1,22 @@
+drop table img;
+drop table img cascade constraints;
+drop sequence seq_img;
+
+create table img(
+num number primary key,
+writer varchar2(20),
+pwd varchar2(20),
+title varchar2(50),
+path varchar2(500),
+u_date date
+);
+
+create sequence seq_img;
+
+
+
+
+
+insert into member(id, password, name, address) values ('java','1234','손연재','수서');
+insert into member(id, password, name, address) values ('Oracle','5678','김연아','군포');
+insert into member(id, password, name, address) values ('JSP','9123','티파니','청담');
